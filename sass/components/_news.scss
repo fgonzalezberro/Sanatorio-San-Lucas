@@ -1,0 +1,79 @@
+// News Styles Open
+.news-main{
+  @include main-size;
+  @include background-sections;
+  padding: 15% 0;
+  -webkit-box-shadow: -1px 9px 21px -4px rgba(54,54,54,1);
+  -moz-box-shadow: -1px 9px 21px -4px rgba(54,54,54,1);
+  box-shadow: -1px 9px 21px -4px rgba(54,54,54,1);
+
+  .news-div{
+    background-color: rgba(255,255,255, .6);
+    width: 60%;
+    color: #363636;
+    position: relative;
+    padding: 20px 10px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 7px 3px 43px -4px rgba(54,54,54,1);
+    -moz-box-shadow: 7px 3px 43px -4px rgba(54,54,54,1);
+    box-shadow: 7px 3px 43px -4px rgba(54,54,54,1);
+    margin: auto;
+    margin-bottom: 1%;
+
+    .news-title-image{
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+    }
+
+    h2{
+      font-weight: bold;
+      width: 70%;
+      color: $sky-blue;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .date-label{
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background-color: $sky-blue;
+      color: #fff;
+      padding: 5px 10px;
+    }
+
+    .news-title-image-content, .news-description{
+      display: none;
+    }
+
+    .news-title-image-content{
+      width: 200px;
+      height: 200px;
+      margin: 5% auto;
+    }
+  }
+
+  .news-div:hover{
+    background-color: rgba(245,245,245, .8);
+  }
+}
+
+@media screen and (max-width: 992px){
+  .news-main{
+    padding: 25% 0;
+
+    .news-div{
+      width: 80%;
+
+      h2{
+       font-size: 10px;
+     }
+    }
+   }
+  }

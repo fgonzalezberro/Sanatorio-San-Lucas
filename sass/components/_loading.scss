@@ -1,0 +1,21 @@
+// Loading Styles Open
+.loading{
+  @include flex-column;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10000000000000000;
+
+  i{
+    font-size: 3rem;
+    color: $sky-blue;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .loading i{
+    font-size: 4rem !important;
+  }
+}

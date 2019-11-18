@@ -1,0 +1,47 @@
+// Institutional Styles Open
+.institutional{
+  @include flex-column;
+  @include main-size;
+  @include background-sections;
+
+  h1{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .institutional-content{
+    text-align: center;
+    padding: 10% 20% 15% 20%;
+
+    h2{
+     color: #0c82c6;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin: 2% 0 1% 0;
+   }
+
+   p{
+     color: #fff;
+   }
+  }
+}
+
+@media screen and (max-width: 792px){
+  .institutional h1{
+    font-size: 20px;
+    margin-top: 15%;
+
+    .institutional-content{
+      h2{
+        font-size: 18px;
+        margin: 2% 0 2% 0;
+      }
+
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// Contact Styles Open
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10% 0;
+
+  i{
+   color: grey;
+   margin-bottom: 2%;
+ }
+
+ h2{
+   color: #0c82c6;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+ }
+
+ form{
+   width: 70%;
+
+   textarea{
+     padding-top: 1%;
+   }
+
+   select{
+     text-align-last: center;
+     border: 1px solid #e3e3e3;
+     color: #343a40;
+   }
+
+   #button-form{
+     width: 50%;
+     background-color: #343a40;
+     border: 1px solid #343a40;
+     color: #fff;
+     height: 50px;
+     cursor: pointer;
+     transition: 1s;
+   }
+
+   #button-form:hover{
+     color: #444;
+     background-color: #fff;
+   }
+ }
+
+ form input, form select{
+   height: 50px;
+   margin: 2% 0;
+ }
+
+form input, form select, form textarea{
+   width: 50%;
+   padding-left: 2%;
+   border: 1px solid #e3e3e3;
+ }
+}
+
+@media screen and (max-width: 992px){
+  .contact{
+    padding: 35% 0;
+
+    form{
+      width: 100%;
+
+      input, select, textarea{
+        width: 70%;
+      }
+    }
+    
+    #button-form{
+     width: 70%;
+   }
+  }
+}

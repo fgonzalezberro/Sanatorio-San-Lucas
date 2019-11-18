@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta Labels -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright"content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin">
+
+
+    <!-- Website Title -->
+    <title>Noticias</title>
+
+    <!-- Fontawesome CSS Plugin (5.7.2 Version) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1v plugin (Full Version) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Animate css plugin -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Favico Website Logo -->
+    <link rel="icon" href="../img/logos/ssl_favico.ico">
+    <!-- Principal internal css file -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+  </head>
+
+  <!-- Body Document Open -->
+  <body>
+
+    <!-- Hospital News Section Open-->
+    <img id="logo-sections" src="../img/logos/sanatorio-san-lucas-white.png" alt="">
+    <p id="back-to-index" class="animated pulse infinite"><i class="fas fa-chevron-circle-left"></i> Volver</p>
+    <section class="news-main"></section>
+    <!-- Hospital News Section Close -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <scrtip src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></scrtip>
+
+    <!-- Firebase authentication -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+    <!-- Data base Real Time SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <!-- Firebase Storage SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-storage.js"></script>
+
+
+    <!-- Your web app's Firebase configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAF2HokJ3J7vWhJS_K_ZDwQIdQZEGw2xNw",
+        authDomain: "sanatorio-san-lucas-15769.firebaseapp.com",
+        databaseURL: "https://sanatorio-san-lucas-15769.firebaseio.com",
+        projectId: "sanatorio-san-lucas-15769",
+        storageBucket: "gs://sanatorio-san-lucas-15769.appspot.com/",
+        messagingSenderId: "287848830972",
+        appId: "1:287848830972:web:172b039433ee5533c8c479",
+        measurementId: "G-R2WWFMNFH0"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <!-- jQuery 3.4.1v plugin (Full Version) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Wow Js Plugin -->
+    <script type="text/javascript" src="../js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- News JavaScript File -->
+    <script src="../js/news.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+  <!-- Body Document Close -->
+</html>

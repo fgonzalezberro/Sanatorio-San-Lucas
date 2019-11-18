@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright"content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome CSS Plugin (5.7.2 Version) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap 4.3.1v plugin (Full Version) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Animate css plugin -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Favico Website Logo -->
+    <link rel="icon" href="img/logos/ssl_favico.ico">
+    <!-- jQuery UI plugin -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Text Editor CSS plugin -->
+    <link rel="stylesheet" href="css/editor.css">
+    <!-- Principal internal css file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Subir Noticias</title>
+  </head>
+  <body>
+
+    <!-- Dashboard Section Open -->
+    <section class="dashboard-section">
+      <a href="index.html"><img src="img/logos/sanatorio-san-lucas-sky-blue.png" alt=""></a>
+      <h1 class="wow animated fadeInLeft slower">Subir Nueva noticia</h1>
+
+      <input class="wow animated fadeInLeft slow" id="news-title" type="text" name="" placeholder="Titulo" required>
+      <input class="wow animated fadeInLeft slow" id="news-date" type="text" name="" placeholder="Fecha" required>
+
+      <div class="wow animated fadeInLeft slow" id="text-area-box">
+        <textarea class="wow animated fadeInLeft slow" id="news-description" name="name" placeholder="Descripción" required></textarea>
+      </div>
+
+      <p class="wow animated fadeInLeft slow" id="news-image-2-btn" class="animated pulse infinite slow">Subir Imagen <i class="fas fa-folder-plus"></i></p>
+
+      <input id="news-image" type="file" required>
+      <button id="news-update-btn">Subir</button>
+
+      <!-- Progress BAR -->
+      <div id="progress-bar" class="hidden">
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width:0%"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Dashboard Section Close -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <scrtip src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></scrtip>
+
+    <!-- Firebase authentication -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+    <!-- Data base Real Time SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <!-- Firebase Storage SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-storage.js"></script>
+
+
+    <!-- Your web app's Firebase configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAF2HokJ3J7vWhJS_K_ZDwQIdQZEGw2xNw",
+        authDomain: "sanatorio-san-lucas-15769.firebaseapp.com",
+        databaseURL: "https://sanatorio-san-lucas-15769.firebaseio.com",
+        projectId: "sanatorio-san-lucas-15769",
+        storageBucket: "gs://sanatorio-san-lucas-15769.appspot.com/",
+        messagingSenderId: "287848830972",
+        appId: "1:287848830972:web:172b039433ee5533c8c479",
+        measurementId: "G-R2WWFMNFH0"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <!-- jQuery 3.4.1v plugin (Full Version) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.3.1v Plugin (Full Version) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery UI Javascript plugin -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Wow Js Plugin -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- Text Editor JavaScript Plugin -->
+    <script src="js/editor.js"></script>
+    <!-- Principal Javascript file -->
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

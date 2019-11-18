@@ -1,0 +1,965 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+#nav {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000000;
+}
+#nav #menu-btn {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  color: #0c82c6;
+  display: none;
+  cursor: pointer;
+}
+#nav .logo {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+#nav ul {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+#nav ul li {
+  margin-left: 20px;
+  display: inline;
+}
+#nav ul li a:hover {
+  color: #0c82c6 !important;
+}
+#nav ul .contact-btn {
+  background-color: #fff;
+  border: 2px solid #0c82c6;
+  padding: 10px 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+#nav ul .contact-btn a {
+  color: #0c82c6;
+}
+
+@media screen and (max-width: 992px) {
+  #nav #menu-btn {
+    display: block;
+    font-size: 3rem !important;
+    top: 25px;
+    right: 20px;
+  }
+  #nav .logo {
+    left: 20px;
+  }
+  #nav ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+    right: 0;
+    background-color: rgba(16, 131, 194, 0.9);
+  }
+  #nav ul li {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0 0;
+    display: block;
+    margin-left: 0;
+  }
+  #nav ul li a {
+    color: #fff !important;
+    line-height: 60px;
+  }
+  #nav ul .contact-btn {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1110px) {
+  #nav ul {
+    right: 15px;
+  }
+  #nav ul li {
+    margin-left: 15px;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10% 0;
+}
+.contact i {
+  color: grey;
+  margin-bottom: 2%;
+}
+.contact h2 {
+  color: #0c82c6;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.contact form {
+  width: 70%;
+}
+.contact form textarea {
+  padding-top: 1%;
+}
+.contact form select {
+  text-align-last: center;
+  border: 1px solid #e3e3e3;
+  color: #343a40;
+}
+.contact form #button-form {
+  width: 50%;
+  background-color: #343a40;
+  border: 1px solid #343a40;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+.contact form #button-form:hover {
+  color: #444;
+  background-color: #fff;
+}
+.contact form input, .contact form select {
+  height: 50px;
+  margin: 2% 0;
+}
+.contact form input, .contact form select, .contact form textarea {
+  width: 50%;
+  padding-left: 2%;
+  border: 1px solid #e3e3e3;
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    padding: 35% 0;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact form input, .contact form select, .contact form textarea {
+    width: 70%;
+  }
+  .contact #button-form {
+    width: 70%;
+  }
+}
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 10% 0;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dashboard-section img {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+.dashboard-section h1 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 5% 0 1% 0;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.dashboard-section input {
+  border: 3px solid #0c82c6;
+  width: 70%;
+  height: 50px;
+  padding-left: 2%;
+  margin: 1% 0;
+}
+.dashboard-section #text-area-box {
+  width: 70%;
+  max-width: 70%;
+  background-color: #fff;
+  border: 3px solid #0c82c6;
+}
+.dashboard-section #text-area-box textarea {
+  width: 100%;
+  height: 250px;
+  padding-top: 1%;
+  padding-left: 2%;
+  margin-bottom: 1%;
+}
+.dashboard-section #news-image-2-btn {
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-top: 2%;
+}
+.dashboard-section .fa-folder-plus {
+  color: #0c82c6;
+}
+.dashboard-section #news-image {
+  display: none;
+}
+.dashboard-section button {
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #0c82c6;
+  transition: 1s;
+  margin: 2% 0;
+  border: 1px solid #0c82c6;
+  cursor: pointer;
+  width: 40%;
+}
+.dashboard-section button:hover {
+  background-color: #fff;
+  color: #0c82c6;
+}
+.dashboard-section #progress-bar {
+  width: 40%;
+  display: none;
+}
+
+@media screen and (max-width: 724px) {
+  .dashboard-section h1 {
+    font-size: 25px;
+    margin-top: 5%;
+  }
+}
+footer {
+  width: 100%;
+}
+footer .row-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0C82C6;
+  padding: 2% 0;
+}
+footer .row-footer .col-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #88b3d0;
+  width: 30%;
+}
+footer .row-footer .col-footer p {
+  margin: 1% 0;
+}
+footer .copyright-footer {
+  background-color: #1166a1;
+  text-align: center;
+  padding: 2%;
+  color: #88b3d0;
+}
+
+@media screen and (max-width: 992px) {
+  footer .row-footer {
+    flex-direction: column;
+  }
+  footer .row-footer .col-footer {
+    padding: 2% 0;
+    width: 100%;
+  }
+  footer .row-footer .col-footer .col-footer p {
+    font-size: 12px;
+  }
+  footer .copyright-footer {
+    font-style: 12px;
+  }
+}
+.hospital-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-top: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  border-bottom: 1px solid #e3e3e3;
+}
+.hospital-cover .hospital-cover-image {
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .hospital-cover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sanatorio-san-lucas-9.jpg") !important;
+    background-size: cover !important;
+    height: 70vh !important;
+  }
+}
+.hospital-services {
+  width: 100%;
+  padding: 10% 0;
+  text-align: center;
+}
+.hospital-services .hospital-services-title .fa-cogs {
+  color: grey;
+  margin-bottom: 2%;
+}
+.hospital-services .hospital-services-title h2 {
+  color: #0c82c6;
+  margin: 1% 0 5% 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.hospital-services .hospital-services-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.hospital-services .hospital-services-content div {
+  width: 10%;
+  margin: 0 5px;
+}
+.hospital-services .hospital-services-content div i {
+  font-size: 4rem;
+  color: #444;
+  margin-bottom: 10%;
+}
+.hospital-services .hospital-services-content div h3 {
+  font-size: 20px;
+  color: #0c82c6;
+  font-weight: bold;
+}
+.hospital-services .hospital-services-content div p {
+  color: grey;
+  font-size: 10px;
+}
+.hospital-services .other-medicals-consultants {
+  width: 100%;
+  margin: 10% 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hospital-services .other-medicals-consultants .medicals-consultants-img {
+  width: 15%;
+  height: auto;
+  margin: 0 5%;
+  cursor: pointer;
+  position: relative;
+  transition: 1s;
+}
+.hospital-services .other-medicals-consultants .medicals-consultants-img .label-image {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #fff;
+  background-color: #0c82c6;
+  padding: 0 5%;
+}
+.hospital-services .other-medicals-consultants .medicals-consultants-img:hover {
+  width: 18%;
+}
+.hospital-services .other-medicals-consultants img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .hospital-services .hospital-services-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hospital-services .hospital-services-content div {
+    text-align: center;
+    width: 100%;
+    margin: 5% 0;
+  }
+  .hospital-services .other-medicals-consultants {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hospital-services .other-medicals-consultants .medicals-consultants-img {
+    margin: 5% 0;
+    width: 50%;
+  }
+  .hospital-services .other-medicals-consultants .medicals-consultants-img img {
+    width: 80%;
+  }
+  .hospital-services .other-medicals-consultants .medicals-consultants-img:hover {
+    width: 60%;
+  }
+}
+.institutional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.institutional h1 {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.institutional .institutional-content {
+  text-align: center;
+  padding: 10% 20% 15% 20%;
+}
+.institutional .institutional-content h2 {
+  color: #0c82c6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 2% 0 1% 0;
+}
+.institutional .institutional-content p {
+  color: #fff;
+}
+
+@media screen and (max-width: 792px) {
+  .institutional h1 {
+    font-size: 20px;
+    margin-top: 15%;
+  }
+  .institutional h1 .institutional-content h2 {
+    font-size: 18px;
+    margin: 2% 0 2% 0;
+  }
+  .institutional h1 .institutional-content p {
+    font-size: 13px;
+  }
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10000000000000000;
+}
+.loading i {
+  font-size: 3rem;
+  color: #0c82c6;
+}
+
+@media screen and (max-width: 992px) {
+  .loading i {
+    font-size: 4rem !important;
+  }
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 10% 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-9.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.location i {
+  color: #0c82c6;
+  margin-bottom: 2%;
+}
+.location h2 {
+  color: #fff;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.location iframe {
+  width: 50%;
+  height: 400px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-section i {
+  font-size: 5rem;
+  color: #0c82c6;
+  margin: 2% 0;
+  cursor: pointer;
+  transition: 1s;
+}
+.login-section input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  margin: 1% 0;
+  text-align: center;
+}
+.login-section button {
+  width: 200px;
+  height: 30px;
+  background-color: #0c82c6;
+  color: #fff;
+  border: 1px solid #0c82c6;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.login-section button:hover {
+  background-color: #194f7e;
+  color: #fff;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 6873995514006732800;
+  display: none;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+/* Medic Staff Section Styles Open */
+.medic-staff-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0 5% 0;
+}
+.medic-staff-section h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.medic-staff-section .medic-staff-section-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.medic-staff-section .medic-staff-section-content p {
+  color: #fff;
+}
+.medic-staff-section .medic-staff-section-content p strong {
+  color: #0c82c6;
+}
+.medic-staff-section .medic-staff-section-content div {
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .medic-staff-section {
+    padding: 20% 0 5% 0;
+  }
+  .medic-staff-section h1 {
+    font-size: 25px;
+  }
+  .medic-staff-section p {
+    font-size: 15px;
+  }
+}
+.news-main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15% 0;
+  -webkit-box-shadow: -1px 9px 21px -4px #363636;
+  -moz-box-shadow: -1px 9px 21px -4px #363636;
+  box-shadow: -1px 9px 21px -4px #363636;
+}
+.news-main .news-div {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  color: #363636;
+  position: relative;
+  padding: 20px 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 7px 3px 43px -4px #363636;
+  -moz-box-shadow: 7px 3px 43px -4px #363636;
+  box-shadow: 7px 3px 43px -4px #363636;
+  margin: auto;
+  margin-bottom: 1%;
+}
+.news-main .news-div .news-title-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+.news-main .news-div h2 {
+  font-weight: bold;
+  width: 70%;
+  color: #0c82c6;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.news-main .news-div .date-label {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #0c82c6;
+  color: #fff;
+  padding: 5px 10px;
+}
+.news-main .news-div .news-title-image-content, .news-main .news-div .news-description {
+  display: none;
+}
+.news-main .news-div .news-title-image-content {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+}
+.news-main .news-div:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+@media screen and (max-width: 992px) {
+  .news-main {
+    padding: 25% 0;
+  }
+  .news-main .news-div {
+    width: 80%;
+  }
+  .news-main .news-div h2 {
+    font-size: 10px;
+  }
+}
+.teaching-committee-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.teaching-committee-section h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.teaching-committee-section h3 {
+  color: #0c82c6;
+}
+.teaching-committee-section p {
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .teaching-committee-section h1 {
+    font-size: 20px;
+  }
+  .teaching-committee-section h3 {
+    font-size: 18px;
+  }
+  .teaching-committee-section p {
+    font-size: 15px;
+  }
+}
+.telephone-button {
+  width: auto;
+  background-color: rgba(16, 131, 194, 0.8);
+  padding: 10px 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin-top: 100px;
+  color: #fff;
+  z-index: 1000000;
+  -webkit-box-shadow: 17px 24px 30px -17px #0c82c6;
+  -moz-box-shadow: 17px 24px 30px -17px #0c82c6;
+  box-shadow: 17px 24px 30px -17px #0c82c6;
+}
+.telephone-button i {
+  color: #fff;
+  font-size: 2rem;
+  margin: 2%;
+}
+.telephone-button p {
+  margin: 2%;
+}
+
+@media screen and (max-width: 992px) {
+  .telephone-button {
+    padding: 5px 25px;
+  }
+}
+.telephone-section {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.telephone-section .telephone-section-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telephone-section .telephone-section-content div {
+  margin: 5% 2%;
+  height: 120px;
+}
+.telephone-section .telephone-section-content div p {
+  color: #fff;
+  margin-top: 5%;
+}
+.telephone-section .telephone-section-content img {
+  width: 70px;
+  height: 70px;
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 792px) {
+  .telephone-section .telephone-section-content {
+    flex-direction: column;
+  }
+  .telephone-section .telephone-section-content div {
+    margin: 5% 0;
+    height: 120px;
+  }
+}
+.user-services {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20vh 0;
+  overflow-y: scroll;
+}
+.user-services h1 {
+  color: #fff;
+  margin-bottom: 2%;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.user-services .user-services-options {
+  width: 70%;
+}
+.user-services .user-services-options .user-services-option-btn {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 131, 194, 0.6);
+  border-bottom: 1px solid #e3e3e3;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+.user-services .user-services-options .cobertura-medica-section {
+  display: none;
+  width: 100%;
+  padding: 5% 0;
+  text-align: left;
+  color: #fff;
+}
+.user-services .user-services-options .servicios-medicos-section {
+  display: none;
+  width: 100%;
+  padding: 5% 0;
+}
+.user-services .user-services-options .servicios-medicos-section p {
+  color: #fff;
+}
+.user-services .user-services-options .servicios-medicos-section ul {
+  text-align: center;
+}
+.user-services .user-services-options .servicios-medicos-section ul li {
+  color: #fff;
+}
+.user-services .user-services-options .cuestionario-pre-quirurgico-section {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding: 5% 0;
+}
+.user-services .user-services-options .cuestionario-pre-quirurgico-section p {
+  color: #fff;
+}
+.user-services .user-services-options .cuestionario-pre-quirurgico-section i {
+  color: #0c82c6;
+  cursor: pointer;
+  font-size: 3rem;
+}
+.user-services .user-services-options .consentimiento-quirurgico-section {
+  display: none;
+  padding: 5% 0;
+  text-align: center;
+}
+.user-services .user-services-options .consentimiento-quirurgico-section p {
+  color: #fff;
+}
+.user-services .user-services-options .consentimiento-quirurgico-section i {
+  color: #0c82c6;
+  cursor: pointer;
+  font-size: 3rem;
+}
+.user-services .user-services-options .constancia-obstetrica-section {
+  display: none;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+}
+.user-services .user-services-options .constancia-obstetrica-section p {
+  color: #fff;
+}
+.user-services .user-services-options .constancia-obstetrica-section i {
+  font-size: 3rem;
+  color: #0c82c6;
+}
+.user-services .user-services-options .preguntas-frecuentes-section {
+  display: none;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+}
+.user-services .user-services-options .preguntas-frecuentes-section p {
+  color: #fff;
+}
+.user-services .user-services-options .user-services-option-btn:hover {
+  background-color: #fff;
+  color: #0c82c6;
+}
+
+@media screen and (max-width: 992px) {
+  .user-services h1 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .user-services p {
+    font-size: 13px;
+  }
+}
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*:link, *:visited, *:active, *:focus {
+  color: grey;
+  outline: none;
+}
+
+#logo-sections {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+#back-to-index {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

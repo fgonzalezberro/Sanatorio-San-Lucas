@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Fontawesome CSS Plugin (5.7.2 Version) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Favico Website Logo -->
+    <link rel="icon" href="img/logos/ssl_favico.ico">
+    <!-- Login css file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Login website title -->
+    <title>Login</title>
+  </head>
+
+  <body>
+
+    <!-- Login Section Open -->
+    <section class="login-section">
+      <i class="fas fa-user-circle"></i>
+      <input class="login-user" type="email" placeholder="Usuario">
+      <input class="login-password" type="password" placeholder="Contraseña">
+      <button id="login-btn">Ingresar</button>
+    </section>
+    <!-- Login Section Close -->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <!-- Firebase authentication -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+
+
+    <!-- Your web app's Firebase configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAF2HokJ3J7vWhJS_K_ZDwQIdQZEGw2xNw",
+        authDomain: "sanatorio-san-lucas-15769.firebaseapp.com",
+        databaseURL: "https://sanatorio-san-lucas-15769.firebaseio.com",
+        projectId: "sanatorio-san-lucas-15769",
+        storageBucket: "gs://sanatorio-san-lucas-15769.appspot.com/",
+        messagingSenderId: "287848830972",
+        appId: "1:287848830972:web:172b039433ee5533c8c479",
+        measurementId: "G-R2WWFMNFH0"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <!-- jQuery 3.4.1v plugin (Full Version) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Login JavaScript Plugin -->
+    <script src="js/login.js"></script>
+  </body>
+</html>

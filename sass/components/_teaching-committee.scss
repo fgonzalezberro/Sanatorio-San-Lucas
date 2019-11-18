@@ -1,0 +1,38 @@
+// Teaching Committee Styles Open
+.teaching-committee-section{
+  @include flex-column;
+  @include main-size;
+  @include background-sections;
+
+  h1{
+   font-size: 40px;
+   color: #fff;
+   margin-bottom: 5%;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+ }
+
+ h3 {
+   color: $sky-blue;
+ }
+
+ p {
+   color: #fff;
+ }
+}
+
+@media screen and (max-width: 992px){
+  .teaching-committee-section{
+    h1{
+       font-size: 20px;
+     }
+
+    h3{
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  }
+}

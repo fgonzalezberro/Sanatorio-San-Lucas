@@ -1,0 +1,88 @@
+// Principal SASS File
+
+// Mixins
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin main-size{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@mixin background-sections{
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0, .8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Colors
+$sky-blue: #0c82c6;
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// Components Imports
+@import 'components/_navbar.scss';
+@import 'components/_contact.scss';
+@import 'components/_dashboard.scss';
+@import 'components/_footer.scss';
+@import 'components/_hospital-cover.scss';
+@import 'components/_hospital-services.scss';
+@import 'components/_institutional.scss';
+@import 'components/_loading.scss';
+@import 'components/_location.scss';
+@import 'components/_login.scss';
+@import 'components/_main.scss';
+@import 'components/_medic-staff.scss';
+@import 'components/_news.scss';
+@import 'components/_teaching-committee.scss';
+@import 'components/_telephone-button.scss';
+@import 'components/_telephone.scss';
+@import 'components/_user-services.scss';
+
+
+// General parameters
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*:link, *:visited, *:active, *:focus{
+  color: grey;
+  outline: none;
+}
+
+#logo-sections{
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+#back-to-index{
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}

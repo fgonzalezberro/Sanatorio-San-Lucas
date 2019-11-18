@@ -1,0 +1,41 @@
+// Login Styles Open
+.login-section{
+  @include flex-column;
+  @include main-size;
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0, .8)), url("../img/sanatorio-san-lucas-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  i{
+    font-size: 5rem;
+    color: $sky-blue;
+    margin: 2% 0;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    margin: 1% 0;
+    text-align: center;
+  }
+
+  button{
+    width: 200px;
+    height: 30px;
+    background-color: $sky-blue;
+    color: #fff;
+    border: 1px solid $sky-blue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  button:hover{
+    background-color: #194f7e;
+    color: #fff;
+  }
+}

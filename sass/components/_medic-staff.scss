@@ -1,0 +1,48 @@
+/* Medic Staff Section Styles Open */
+.medic-staff-section{
+  @include flex-column;
+  @include main-size;
+  @include background-sections;
+  padding: 10% 0 5% 0;
+
+  h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .medic-staff-section-content{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+      color: #fff;
+      strong{
+        color: $sky-blue;
+      }
+    }
+
+    div{
+      margin-bottom: 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .medic-staff-section{
+    padding: 20% 0 5% 0;
+
+    h1{
+     font-size: 25px;
+   }
+
+   p{
+     font-size: 15px;
+   }
+  }
+}

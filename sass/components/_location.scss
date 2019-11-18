@@ -1,0 +1,27 @@
+// Location Styles Open
+.location{
+  @include flex-column;
+  width: 100%;
+  padding: 10% 0;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../img/sanatorio-san-lucas-9.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  i{
+    color: $sky-blue;
+    margin-bottom: 2%
+  }
+
+  h2{
+    color: #fff;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  iframe{
+    width: 50%;
+    height: 400px;
+  }
+}

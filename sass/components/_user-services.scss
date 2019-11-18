@@ -1,0 +1,142 @@
+// User Services Styles
+.user-services{
+  @include background-sections;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20vh 0;
+  overflow-y: scroll;
+
+  h1{
+    color: #fff;
+    margin-bottom: 2%;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .user-services-options{
+    width: 70%;
+
+    .user-services-option-btn{
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(16, 131, 194, .6);
+      border-bottom: 1px solid #e3e3e3;
+      color: #fff;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .cobertura-medica-section{
+      display: none;
+      width: 100%;
+      padding: 5% 0;
+      text-align: left;
+      color: #fff;
+    }
+
+    .servicios-medicos-section{
+      display: none;
+      width: 100%;
+      padding: 5% 0;
+
+      p{
+        color: #fff;
+      }
+
+      ul{
+        text-align: center;
+
+        li{
+          color: #fff;
+        }
+      }
+    }
+
+    .cuestionario-pre-quirurgico-section{
+      display: none;
+      width: 100%;
+      text-align: center;
+      padding: 5% 0;
+
+      p{
+       color: #fff;
+     }
+
+     i{
+       color: $sky-blue;
+       cursor: pointer;
+       font-size: 3rem;
+     }
+    }
+
+    .consentimiento-quirurgico-section{
+      display: none;
+      padding: 5% 0;
+      text-align: center;
+
+      p{
+        color: #fff;
+      }
+
+      i{
+        color: $sky-blue;
+        cursor: pointer;
+        font-size: 3rem;
+      }
+    }
+
+    .constancia-obstetrica-section{
+      display: none;
+      width: 100%;
+      padding: 5% 0;
+      text-align: center;
+
+      p{
+        color: #fff;
+      }
+
+      i{
+        font-size: 3rem;
+        color: $sky-blue;
+      }
+    }
+
+    .preguntas-frecuentes-section{
+      display: none;
+      width: 100%;
+      padding: 5% 0;
+      text-align: center;
+
+      p{
+        color: #fff;
+      }
+    }
+
+    .user-services-option-btn:hover{
+      background-color: #fff;
+      color: $sky-blue;
+    }
+  }
+}
+
+@media screen and (max-width:992px){
+  .user-services {
+    h1{
+      color: #fff;
+      font-size: 20px;
+    }
+
+    p{
+     font-size: 13px;
+   }
+  }
+}

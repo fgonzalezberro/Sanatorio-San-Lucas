@@ -1,0 +1,24 @@
+// Hospital Cover Styles Open
+.hospital-cover{
+  @include flex-column;
+  @include main-size;
+  margin-top: 100px;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0, .5)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  border-bottom: 1px solid #e3e3e3;
+
+  .hospital-cover-image{
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .hospital-cover{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0, .5)), url("../img/sanatorio-san-lucas-9.jpg") !important;
+    background-size: cover !important;
+    height: 70vh !important;
+  }
+}

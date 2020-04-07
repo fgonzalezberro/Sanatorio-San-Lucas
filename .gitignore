@@ -1,1 +1,5 @@
+# .Git Ignore
+.gitignore
+
+# Server python
 server.py

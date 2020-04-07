@@ -313,12 +313,31 @@ footer .copyright-footer {
   width: 40%;
   height: auto;
 }
+.hospital-cover .hospital-cover-carousel {
+  position: absolute;
+  top: 40vh;
+  right: 20vh;
+  cursor: pointer;
+}
+.hospital-cover .hospital-cover-carousel img {
+  width: 150px;
+  height: 150px;
+}
+.hospital-cover .hospital-carousel-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 992px) {
   .hospital-cover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sanatorio-san-lucas-9.jpg") !important;
     background-size: cover !important;
     height: 70vh !important;
+  }
+  .hospital-cover .hospital-cover-carousel {
+    display: none;
   }
 }
 .hospital-services {
@@ -940,6 +959,7 @@ footer .copyright-footer {
 *:link, *:visited, *:active, *:focus {
   color: grey;
   outline: none;
+  text-decoration: none;
 }
 
 #logo-sections {

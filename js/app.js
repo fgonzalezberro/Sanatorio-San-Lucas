@@ -107,4 +107,46 @@ $(document).ready(() =>{
   $("#omar-center-btn").click(() =>{
     window.location.href = "http://www.centromedicomartinyomar.com/";
   });
+
+  const dataBase = firebase.database().ref();
+  let carouselArr = [];
+  let carouselArrTitle = [];
+
+  // Recover Data Base info
+  chargeHospitalCarousel();
+
+  function chargeHospitalCarousel(){
+    dataBase.on("value", function(snapshot){
+      let showData = snapshot.val();
+
+      // Iterate all tables in DB
+      for(var key in showData){
+       carouselArr.push(showData[key].url);
+       carouselArrTitle.push(showData[key].title);
+      }
+    });
+   }
+
+  let i = 0;
+
+  console.log(carouselArr);
+
+  setInterval(function(){
+
+    if(i < carouselArr.length){
+      $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
+      $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
+    }else{
+      i = 0;
+      $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
+      $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
+    }
+
+    i++;
+  },3000);
+
+  $(".hospital-cover-carousel").click(() =>{
+    window.location.href = "../components/news.html";
+  });
+
 });

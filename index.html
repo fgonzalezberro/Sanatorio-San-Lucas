@@ -16,10 +16,11 @@
 
     <!-- Fontawesome CSS Plugin (5.7.2 Version) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Bootstrap 4.3.1v plugin (Full Version) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Animate css plugin -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- Slick css Plugin -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <!-- Favico Website Logo -->
     <link rel="icon" href="img/logos/ssl_favico.ico">
     <!-- Principal internal css file -->
@@ -95,16 +96,9 @@
     <!-- Hospital Cover Section Open-->
     <section class="hospital-cover hide-and-show">
       <img class="hospital-cover-image" src="img/logos/sanatorio-san-lucas-white.png" alt="">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner"></div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <div class="hospital-cover-carousel">
+        <img class="hospital-carousel-image"></img>
+        <p class="hospital-carousel-title"></p>
       </div>
     </section>
     <!-- Hospital Cover Section Close -->
@@ -189,8 +183,8 @@
         <br>
         <select id="select-form" class="" name="select-sector" required>
           <option value="">Seleccióne Destinatarío</option>
-          <option value="fgonzalezberro@gmail.com">Dirección Medica</option>
-          <option value="fgonzalzberro@gmail.com">Recursos Humanos</option>
+          <option value="direccionmedica@sanlucas.com.ar">Dirección Medica</option>
+          <option value="personal@sanlucas.com.ar">Recursos Humanos</option>
         </select>
         <br>
         <input id="button-form" class="wow animated bounceInLeft" type="submit" value="Envíar">
@@ -254,8 +248,8 @@
 
     <!-- jQuery 3.4.1v plugin (Full Version) -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!-- Bootstrap 4.3.1v Plugin (Full Version) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Slick JavaScript Plugin -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- Wow Js Plugin -->
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script>new WOW().init();</script>

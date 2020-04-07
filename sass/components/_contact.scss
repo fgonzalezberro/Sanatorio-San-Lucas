@@ -11,13 +11,15 @@
   i{
    color: grey;
    margin-bottom: 2%;
- }
+   font-size: 2rem;
+  }
 
  h2{
+   font-size: 22px;
    color: #0c82c6;
    text-transform: uppercase;
    letter-spacing: 3px;
- }
+  }
 
  form{
    width: 70%;
@@ -33,7 +35,7 @@
    }
 
    #button-form{
-     width: 50%;
+     width: 40%;
      background-color: #343a40;
      border: 1px solid #343a40;
      color: #fff;
@@ -49,12 +51,12 @@
  }
 
  form input, form select{
-   height: 50px;
-   margin: 2% 0;
+   height: 30px;
+   margin: 1% 0;
  }
 
-form input, form select, form textarea{
-   width: 50%;
+ form input, form select, form textarea{
+   width: 40%;
    padding-left: 2%;
    border: 1px solid #e3e3e3;
  }
@@ -71,7 +73,7 @@ form input, form select, form textarea{
         width: 70%;
       }
     }
-    
+
     #button-form{
      width: 70%;
    }

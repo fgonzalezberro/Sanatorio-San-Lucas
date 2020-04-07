@@ -106,8 +106,10 @@
 .contact i {
   color: grey;
   margin-bottom: 2%;
+  font-size: 2rem;
 }
 .contact h2 {
+  font-size: 22px;
   color: #0c82c6;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -124,7 +126,7 @@
   color: #343a40;
 }
 .contact form #button-form {
-  width: 50%;
+  width: 40%;
   background-color: #343a40;
   border: 1px solid #343a40;
   color: #fff;
@@ -137,11 +139,11 @@
   background-color: #fff;
 }
 .contact form input, .contact form select {
-  height: 50px;
-  margin: 2% 0;
+  height: 30px;
+  margin: 1% 0;
 }
 .contact form input, .contact form select, .contact form textarea {
-  width: 50%;
+  width: 40%;
   padding-left: 2%;
   border: 1px solid #e3e3e3;
 }
@@ -368,7 +370,7 @@ footer .copyright-footer {
   margin: 0 5px;
 }
 .hospital-services .hospital-services-content div i {
-  font-size: 4rem;
+  font-size: 2rem;
   color: #444;
   margin-bottom: 10%;
 }
@@ -523,17 +525,19 @@ footer .copyright-footer {
   background-size: 100% 100%;
 }
 .location i {
+  font-size: 2rem;
   color: #0c82c6;
   margin-bottom: 2%;
 }
 .location h2 {
+  font-size: 22px;
   color: #fff;
   margin-bottom: 5%;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 .location iframe {
-  width: 50%;
+  width: 40%;
   height: 400px;
 }
 
@@ -755,7 +759,7 @@ footer .copyright-footer {
 .telephone-button {
   width: auto;
   background-color: rgba(16, 131, 194, 0.8);
-  padding: 10px 50px;
+  padding: 5px 25px;
   cursor: pointer;
   display: flex;
   flex-direction: row;

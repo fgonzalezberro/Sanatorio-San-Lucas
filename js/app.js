@@ -58,49 +58,29 @@ $(document).ready(() =>{
   });
 
   // Show and Hide User services options
-  $(".coberturas-medicas-btn").click(() =>{
-    $(".cobertura-medica-section").slideToggle();
-  });
+  $(".coberturas-medicas-btn").click(() => $(".cobertura-medica-section").slideToggle());
 
-  $(".servicios-medicos-btn").click(() =>{
-    $(".servicios-medicos-section").slideToggle();
-  });
+  $(".servicios-medicos-btn").click(() => $(".servicios-medicos-section").slideToggle());
 
-  $(".cuestionario-pre-quirurgico-btn").click(() =>{
-    $(".cuestionario-pre-quirurgico-section").slideToggle();
-  });
+  $(".cuestionario-pre-quirurgico-btn").click(() => $(".cuestionario-pre-quirurgico-section").slideToggle());
 
-  $(".consentimiento-quirurgico-btn").click(() =>{
-    $(".consentimiento-quirurgico-section").slideToggle();
-  });
+  $(".consentimiento-quirurgico-btn").click(() => $(".consentimiento-quirurgico-section").slideToggle());
 
-  $(".constancia-obstetrica-btn").click(() =>{
-    $(".constancia-obstetrica-section").slideToggle();
-  });
+  $(".constancia-obstetrica-btn").click(() => $(".constancia-obstetrica-section").slideToggle());
 
-  $(".preguntas-frecuentes-btn").click(() =>{
-    $(".preguntas-frecuentes-section").slideToggle();
-  });
+  $(".preguntas-frecuentes-btn").click(() => $(".preguntas-frecuentes-section").slideToggle());
 
   // Redirect to other services WebSites
-  $("#argus-btn").click(() =>{
-    window.location.href = "https://www.argus.com.ar/";
-  });
+  $("#argus-btn").click(() => window.location.href = "https://www.argus.com.ar/");
 
-  $("#hidalgo-btn").click(() =>{
-    window.location.href = "https://www.laboratoriohidalgo.com/";
-  });
+  $("#hidalgo-btn").click(() => window.location.href = "https://www.laboratoriohidalgo.com/");
 
-  $("#omar-center-btn").click(() =>{
-    window.location.href = "http://www.centromedicomartinyomar.com/";
-  });
+  $("#omar-center-btn").click(() => window.location.href = "http://www.centromedicomartinyomar.com/");
 
+  // Recover Data Base info
   const dataBase = firebase.database().ref();
   let carouselArr = [];
   let carouselArrTitle = [];
-
-  // Recover Data Base info
-  chargeHospitalCarousel();
 
   function chargeHospitalCarousel(){
     dataBase.on("value", function(snapshot){
@@ -114,7 +94,9 @@ $(document).ready(() =>{
     });
    }
 
-  // News Carousel
+   chargeHospitalCarousel();
+
+  // Set News Carousel In Hospital Cover
   let i = 0;
 
   setInterval(function(){
@@ -130,6 +112,6 @@ $(document).ready(() =>{
   },3000);
 
   $(".hospital-cover-carousel").click(() =>{
-    window.location.href = "../components/news.html";
+    window.location.href = "../components/_news.html";
   });
 });

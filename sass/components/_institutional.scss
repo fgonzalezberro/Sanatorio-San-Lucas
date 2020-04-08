@@ -1,7 +1,6 @@
 // Institutional Styles Open
 .institutional{
   @include flex-column;
-  @include main-size;
   @include background-sections;
 
   h1{

@@ -1,13 +1,12 @@
 // Loading document
 $(document).ready(() =>{
   $("body").css("overflow-y","scroll");
-  
+
   let storageRef;
   const newsDbRef = firebase.database().ref();
 
   // Text editor
   $("#news-description").Editor();
-
 
   // Upload News-Image button
   $("#news-image-2-btn").click(() =>{
@@ -48,7 +47,7 @@ $(document).ready(() =>{
           break;
       }
 
-	   // Show Progress BAR
+	     // Show Progress BAR
        $("#progress-bar").show();
        document.querySelector(".progress-bar").style.width = progress + "%";
 
@@ -62,9 +61,9 @@ $(document).ready(() =>{
         createNodeInFireBase(uploadImageToStorage.name , downloadURL);
         $("#progress-bar").hide();
 
-		// Clean inputs
+		    // Clean inputs
         setTimeout(function(){
-		   window.location.href="dashboard.html";
+		      window.location.href="dashboard.html";
         },500);
       });
     });

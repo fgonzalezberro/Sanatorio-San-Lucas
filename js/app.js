@@ -5,7 +5,7 @@ $(document).ready(() =>{
     $("body").css("overflow-y","scroll");
   }, 500);
 
-  // Mobile Menu Button Slide Up & Down
+  // Mobile menu slide up & down animation
   let state = true;
   $("#menu-btn").click(() =>{
     if(state == true){
@@ -25,49 +25,36 @@ $(document).ready(() =>{
     window.location.href="../index.html";
   });
 
-  // Load Telephone Section
-  $(".telephone-button").click(() =>{
+  const loadComponents = (urlToLoad) =>{
     $("body").css("overflow-y","hidden");
     $(".main").slideDown();
     $(".main").css("display","block");
-    $(".main").load("../components/telephone.html");
-    $(".hide-and-show").hide();
+    $(".main").load("../components/"+urlToLoad);
+  }
+
+  // Load Telephone Section
+  $(".telephone-button").click(function(){
+    loadComponents('_telephone.html');
   });
 
   // Load Institutional Section
-  $(".institutional-btn").click(() =>{
-    $("body").css("overflow-y","hidden");
-    $(".main").slideDown();
-    $(".main").css("display","block");
-    $(".main").load("../components/institutional.html");
-    $(".hide-and-show").hide();
+  $(".institutional-btn").click(function(){
+    loadComponents('_institutional.html');
   });
 
   // Load User services section
-  $(".user-services-btn").click(() =>{
-    $("body").css("overflow-y","hidden");
-    $(".main").slideDown();
-    $(".main").css("display","block");
-    $(".main").load("../components/user-services.html");
-    $(".hide-and-show").hide();
+  $(".user-services-btn").click(function(){
+    loadComponents('_user-services.html');
   });
 
   // Load medic staff section
-  $(".medic-staff-btn").click(() =>{
-    $("body").css("overflow-y","hidden");
-    $(".main").slideDown();
-    $(".main").css("display","block");
-    $(".main").load("../components/medic-staff.html");
-    $(".hide-and-show").hide();
+  $(".medic-staff-btn").click(function(){
+    loadComponents('_medic-staff.html');
   });
 
   // Load Teaching Committee section
-  $(".teaching-committee-btn").click(() =>{
-    $("body").css("overflow-y","hidden");
-    $(".main").slideDown();
-    $(".main").css("display","block");
-    $(".main").load("../components/teaching-committee.html");
-    $(".hide-and-show").hide();
+  $(".teaching-committee-btn").click(function(){
+    loadComponents('_teaching-committee.html');
   });
 
   // Show and Hide User services options
@@ -127,12 +114,10 @@ $(document).ready(() =>{
     });
    }
 
+  // News Carousel
   let i = 0;
 
-  console.log(carouselArr);
-
   setInterval(function(){
-
     if(i < carouselArr.length){
       $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
       $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
@@ -141,12 +126,10 @@ $(document).ready(() =>{
       $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
       $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
     }
-
     i++;
   },3000);
 
   $(".hospital-cover-carousel").click(() =>{
     window.location.href = "../components/news.html";
   });
-
 });

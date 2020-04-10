@@ -23,24 +23,45 @@
     <!-- Principal internal css file -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Subir Noticias</title>
+    <title>Panel de control</title>
   </head>
   <body>
 
+    <!-- Navbar Section Open -->
+    <nav>
+      <img class="dashboard-logo" src="img/logos/sanatorio-san-lucas-white.png" alt="">
+    </nav>
+    <!-- Navbar Section Close -->
+
     <!-- Dashboard Section Open -->
     <section class="dashboard-section">
-      <img class="dashboard-logo" src="img/logos/sanatorio-san-lucas-blue.png" alt="">
       <div class="side-bar">
         <i class="fas fa-bars dashboard-btn"></i>
         <ul class="dashboard-options">
-          <li>Subir Noticias <i class="fas fa-file-upload"></i></li>
-          <li>Borrar Noticias <i class="fas fa-trash-alt"></i></li>
-          <li class="log-out">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></li>
+          <li class="add-news-opt">Subir Noticias <i class="fas fa-file-upload"></i></li>
+          <li class="delete-news-opt">Borrar Noticias <i class="fas fa-trash-alt"></i></li>
+          <li class="change-password-opt">Cambiar Contraseña <i class="fas fa-key"></i></li>
+          <li class="log-out-opt">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></li>
         </ul>
       </div>
 
       <div class="dashboard-main">
         <h2>Bienvenido al panel de control <i class="fas fa-poll"></i></h2>
+
+        <div class="add-news-section">
+          <h3>Subir una noticia</h3>
+          <form action="add-news-form">
+            <input class="news-title" type="text" placeholder="Titulo">
+            <input class="news-date" type="text" placeholder="Fecha">
+            <input id="news-input-file" type="file" name="name" value="" requerid>
+            <div class="charge-image-button">
+              <i class="far fa-image"></i>
+              <p>Seleccióna una imagén</p>
+            </div>
+            <textarea name="name" rows="8" cols="80" placeholder="Contenido..."></textarea>
+            <button class="add-new-btn" value="" type="submit">Subir Noticia</button>
+          </form>
+        </div>
       </div>
     </section>
     <!-- Dashboard Section Close -->

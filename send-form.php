@@ -8,7 +8,7 @@
    // Email data
    $select = $_POST["select-sector"];
 
-   $emailMessage = "De: $name  \n";
+   $emailMessage = "De: $name \n";
    $emailMessage .= "E-mail: $email \n";
    $emailMessage .= "Asunto: $affair \n";
    $emailMessage .= "Mensaje: $message";

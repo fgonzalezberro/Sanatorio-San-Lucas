@@ -76,42 +76,4 @@ $(document).ready(() =>{
   $("#hidalgo-btn").click(() => window.location.href = "https://www.laboratoriohidalgo.com/");
 
   $("#omar-center-btn").click(() => window.location.href = "http://www.centromedicomartinyomar.com/");
-
-  // Recover Data Base info
-  const dataBase = firebase.database().ref();
-  let carouselArr = [];
-  let carouselArrTitle = [];
-
-  function chargeHospitalCarousel(){
-    dataBase.on("value", function(snapshot){
-      let showData = snapshot.val();
-
-      // Iterate all tables in DB
-      for(var key in showData){
-       carouselArr.push(showData[key].url);
-       carouselArrTitle.push(showData[key].title);
-      }
-    });
-   }
-
-   chargeHospitalCarousel();
-
-  // Set News Carousel In Hospital Cover
-  let i = 0;
-
-  setInterval(function(){
-    if(i < carouselArr.length){
-      $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
-      $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
-    }else{
-      i = 0;
-      $(".hospital-carousel-image").attr('src' , `${carouselArr[i]}`);
-      $(".hospital-carousel-title").html(`${carouselArrTitle[i]}`);
-    }
-    i++;
-  },3000);
-
-  $(".hospital-cover-carousel").click(() =>{
-    window.location.href = "../components/_news.html";
-  });
 });

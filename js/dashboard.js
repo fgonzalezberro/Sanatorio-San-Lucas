@@ -132,7 +132,8 @@ $(document).ready(() =>{
 
     }, function(error) {
         $("#progress-bar").hide();
-        console.log(error);
+        alert('No se pudo subir la noticia.');
+        window.location.href = 'dashboard.html';
     }, function() {
       uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
         $("#progress-bar").hide();
@@ -173,6 +174,7 @@ $(document).ready(() =>{
     });
   }
 
+  // Delete news function
   const deleteNew = (e) =>{
     let dataBaseRef = firebase.database();
     let newToDelete = e.getAttribute('value');
@@ -181,4 +183,16 @@ $(document).ready(() =>{
 
     alert('Noticia borrada correctamente');
   }
+
+  // Log out Firebase sesion
+  $(".log-out-opt").click(() =>{
+    firebase.auth().signOut()
+    .then(() =>{
+      alert('Se cerro la sesion correctamente');
+      window.location.href = 'login.html';
+    })
+    .catch(() =>{
+      alert('No se pudo cerrar la sesion correctamente');
+    })
+  });
 });

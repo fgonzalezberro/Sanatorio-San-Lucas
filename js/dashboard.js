@@ -54,6 +54,8 @@ $(document).ready(() =>{
   }
 
   $(".add-news-opt").click(() => changeDashSection('.add-news-section'));
+  $(".remove-news-opt").click(() => changeDashSection('.remove-news-section'));
+  $(".change-password-opt").click(() => changeDashSection('.change-password-section'));
 
   // Open Input 'file' when the usr click the element 'Charge Image Button'
   $(".charge-image-button").click(() =>{
@@ -65,11 +67,11 @@ $(document).ready(() =>{
 
   // Capture the Input Type element
   const inputFileType = document.getElementById('news-input-file');
+  // Capture Cahrge Image Button
+  const chargeImgBtn = document.querySelector('.charge-image-button');
 
   // When de image is upload or status change
   inputFileType.addEventListener('change', ()=>{
-    const chargeImgBtn = document.querySelector('.charge-image-button');
-
     chargeImgBtn.innerHTML = `
                               <i class="fas fa-check-circle" style="color: #C0E189"></i>
                               <p> Imagen cargada correctamente </p>
@@ -100,6 +102,10 @@ $(document).ready(() =>{
        date: newsDate,
        content: newsContent
      });
+
+     alert('Se ah añadido correctamente la noticia');
+
+     window.location.href = 'dashboard.html';
    }
 
    // Define the image to upload in the storage
@@ -120,12 +126,59 @@ $(document).ready(() =>{
           console.log('Upload is running');
           break;
       }
+        // Show progress bar
+       $("#progress-bar").show();
+       document.querySelector(".progress-bar").style.width = progress + "%";
+
     }, function(error) {
+        $("#progress-bar").hide();
         console.log(error);
     }, function() {
       uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+        $("#progress-bar").hide();
         createNodeInDataBase(imageToUpload.name , downloadURL);
       });
     });
   });
+
+  // Recover Data Base info
+  recoverNewsList();
+
+  function recoverNewsList(){
+    let dataBaseRef = firebase.database().ref();
+
+    dataBaseRef.on("value", function(snapshot){
+      let showData = snapshot.val();
+      let newsList = "";
+
+
+      // Iterate all tables in DB
+      for(var key in showData){
+        newsList += `
+                    <tr>
+                    <td>`+showData[key].title+`</td>
+                    <td>`+key+`</td>
+                    <td>`+showData[key].date+`</td>
+                    <td><i class="fas fa-trash-alt `+key+`" value="`+key+`"></i></td>
+                   </tr>
+                   `;
+      }
+
+      // Show the news in news-main section
+      $('tbody').html(newsList);
+
+      $(`.${key}`).click(function(){
+        deleteNew($(this)[0]);
+      });
+    });
+  }
+
+  const deleteNew = (e) =>{
+    let dataBaseRef = firebase.database();
+    let newToDelete = e.getAttribute('value');
+
+    dataBaseRef.ref("/"+newToDelete).remove();
+
+    alert('Noticia borrada correctamente');
+  }
 });

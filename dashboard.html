@@ -39,7 +39,7 @@
         <i class="fas fa-bars dashboard-btn"></i>
         <ul class="dashboard-options">
           <li class="add-news-opt">Subir Noticias <i class="fas fa-file-upload"></i></li>
-          <li class="delete-news-opt">Borrar Noticias <i class="fas fa-trash-alt"></i></li>
+          <li class="remove-news-opt">Borrar Noticias <i class="fas fa-trash-alt"></i></li>
           <li class="change-password-opt">Cambiar Contraseña <i class="fas fa-key"></i></li>
           <li class="log-out-opt">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></li>
         </ul>
@@ -60,9 +60,38 @@
             </div>
             <textarea class="news-content" name="name" rows="8" cols="80" placeholder="Contenido..." required></textarea>
             <button class="add-new-btn" value=""> Subir Noticia</button>
+          </form>
+
+          <!-- Progress BAR -->
+          <div id="progress-bar" class="hidden">
+            <div class="progress">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width:0%"></div>
+            </div>
           </div>
-        </form>
+        </div>
         <!-- 'Add News Section' Close -->
+
+        <!-- 'Remove News Section' Open -->
+        <div class="remove-news-section">
+          <h3>Borrar Noticias</h3>
+          <table>
+            <thead>
+              <th>Titulo <i class="far fa-newspaper"></i></th>
+              <th>ID <i class="fas fa-id-card"></i></th>
+              <th>Fecha <i class="fas fa-clock"></i></th>
+              <th>Borrar <i class="fas fa-calendar-times"></i></th>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+        <!-- 'Remove News Section' Close -->
+
+        <!-- Change Password Section Open -->
+        <div class="change-password-section">
+          <h3>Sección en construcción<i class="fas fa-tools"></i></h3>
+        </div>
+        <!-- Change Password Section Close -->
       </div>
     </section>
     <!-- Dashboard Section Close -->

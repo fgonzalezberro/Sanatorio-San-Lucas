@@ -47,21 +47,22 @@
 
       <div class="dashboard-main">
         <h2>Bienvenido al panel de control <i class="fas fa-poll"></i></h2>
-
+        <!-- 'Add News Section' Open -->
         <div class="add-news-section">
           <h3>Subir una noticia</h3>
-          <form action="add-news-form">
-            <input class="news-title" type="text" placeholder="Titulo">
-            <input class="news-date" type="text" placeholder="Fecha">
-            <input id="news-input-file" type="file" name="name" value="" requerid>
+          <form class="add-news-form">
+            <input class="news-title" type="text" placeholder="Titulo" required>
+            <input class="news-date" type="text" placeholder="Fecha" required>
+            <input id="news-input-file" type="file" name="" value="" required>
             <div class="charge-image-button">
               <i class="far fa-image"></i>
               <p>Seleccióna una imagén</p>
             </div>
-            <textarea name="name" rows="8" cols="80" placeholder="Contenido..."></textarea>
-            <button class="add-new-btn" value="" type="submit">Subir Noticia</button>
-          </form>
-        </div>
+            <textarea class="news-content" name="name" rows="8" cols="80" placeholder="Contenido..." required></textarea>
+            <button class="add-new-btn" value=""> Subir Noticia</button>
+          </div>
+        </form>
+        <!-- 'Add News Section' Close -->
       </div>
     </section>
     <!-- Dashboard Section Close -->

@@ -15,7 +15,7 @@
 
    // Aditional Headers
    $aditionalHeaders = "From: $email \r\n";
-   $aditionalHeaders .= "Bcc: <fgonzalezberro@gmail.com> \r\n";
+   $aditionalHeaders .= "Bcc: <webmaster@sanlucas.com.ar> \r\n";
 
    //Send Email
    $mail = @mail($select, $affair, $emailMessage, $aditionalHeaders);

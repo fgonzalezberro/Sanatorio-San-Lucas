@@ -5,7 +5,7 @@ $(document).ready(() =>{
   let btnStatus = true;
 
   // Transform 'News Textarea' in a Editable textarea
-  $(".news-content").Editor(); 
+  $(".news-content").Editor();
 
   // Set Sidebar animation's
   $(".dashboard-btn").click(() =>{
@@ -65,6 +65,16 @@ $(document).ready(() =>{
 
   // Capture the Input Type element
   const inputFileType = document.getElementById('news-input-file');
+
+  // When de image is upload or status change
+  inputFileType.addEventListener('change', ()=>{
+    const chargeImgBtn = document.querySelector('.charge-image-button');
+
+    chargeImgBtn.innerHTML = `
+                              <i class="fas fa-check-circle" style="color: #C0E189"></i>
+                              <p> Imagen cargada correctamente </p>
+                             `;
+  });
 
   // This function upload all data in firebase DB
   $(".add-new-btn").click(() =>{

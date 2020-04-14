@@ -179,7 +179,7 @@ $(document).ready(() =>{
       // Show the news in news-main section
       $('tbody').html(newsList);
 
-      $(`.${key}`).click(function(){
+      $('.fa-trash-alt').click(function(){
         deleteNew($(this)[0]);
       });
     });

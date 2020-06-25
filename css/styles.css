@@ -660,12 +660,12 @@ footer .copyright-footer {
 }
 .covid-19-button {
   width: 100%;
-  position: absolute;
+  background-color: rgba(255, 99, 71, 0.8);
+  text-align: center;
+  position: fixed;
   padding: 20px 0;
   top: 100px;
   left: 0;
-  text-align: center;
-  background-color: tomato;
   color: #fff;
   cursor: pointer;
   display: flex;
@@ -676,7 +676,35 @@ footer .copyright-footer {
   letter-spacing: 5px;
   margin: 0 15px;
 }
+.covid-19-button p {
+  letter-spacing: 2px;
+}
 
+@media screen and (max-width: 600px) {
+  .covid-19-button {
+    width: 100%;
+    background-color: rgba(255, 99, 71, 0.8);
+    text-align: center;
+    position: fixed;
+    padding: 20px 0;
+    top: 100px;
+    left: 0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .covid-19-button h3 {
+    letter-spacing: 2px;
+    margin: 0 10px;
+    font-size: 11px;
+  }
+  .covid-19-button p {
+    letter-spacing: 2px;
+    font-size: 7px;
+  }
+}
 .location {
   display: flex;
   flex-direction: column;
@@ -1118,6 +1146,91 @@ footer .copyright-footer {
     font-size: 13px;
   }
 }
+.covid-19 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0;
+}
+.covid-19 .covid-19-image {
+  width: 30%;
+  height: auto;
+}
+.covid-19 .covid-19-image img {
+  width: 100%;
+  height: auto;
+}
+.covid-19 .covid-19-info {
+  width: 60%;
+  margin: 2rem 0;
+  text-align: left;
+}
+.covid-19 .covid-19-info h3 {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+.covid-19 .covid-19-info p {
+  color: #fff;
+  margin: 1rem 0;
+}
+.covid-19 .covid-19-info p a {
+  color: #0c82c6;
+}
+.covid-19 .covid-19-info .tags-parragraph {
+  color: #0c82c6;
+}
+
+@media screen and (max-width: 992px) {
+  .covid-19 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sanatorio-san-lucas-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25% 0;
+  }
+  .covid-19 .covid-19-image {
+    width: 70%;
+    height: auto;
+  }
+  .covid-19 .covid-19-image img {
+    width: 100%;
+    height: auto;
+  }
+  .covid-19 .covid-19-info {
+    width: 60%;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .covid-19 .covid-19-info h3 {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .covid-19 .covid-19-info p {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 13px;
+  }
+  .covid-19 .covid-19-info p a {
+    color: #0c82c6;
+  }
+  .covid-19 .covid-19-info .tags-parragraph {
+    color: #0c82c6;
+  }
+}
 * {
   border: 0;
   padding: 0;
@@ -1151,6 +1264,23 @@ footer .copyright-footer {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  #back-to-index {
+    font-size: 11px;
+    right: 5px;
+    letter-spacing: 2px;
+  }
+
+  #logo-sections {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

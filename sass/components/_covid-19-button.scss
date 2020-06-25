@@ -1,12 +1,12 @@
 // Covid-19-button Styles Open
 .covid-19-button{
   width: 100%;
-  position: absolute;
+  background-color: rgb(255,99,71, .8);
+  text-align: center;
+  position: fixed;
   padding: 20px 0;
   top: 100px;
   left: 0;
-  text-align: center;
-  background-color: tomato;
   color: #fff;
   cursor: pointer;
   @include flex-row;
@@ -14,5 +14,35 @@
   h3{
     letter-spacing: 5px;
     margin: 0 15px;
+  }
+
+  p{
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .covid-19-button{
+    width: 100%;
+    background-color: rgb(255,99,71, .8);
+    text-align: center;
+    position: fixed;
+    padding: 20px 0;
+    top: 100px;
+    left: 0;
+    color: #fff;
+    cursor: pointer;
+    @include flex-row;
+
+    h3{
+      letter-spacing: 2px;
+      margin: 0 10px;
+      font-size: 11px;
+    }
+
+    p{
+      letter-spacing: 2px;
+      font-size: 7px;
+    }
   }
 }

@@ -53,6 +53,7 @@ $sky-blue: #0c82c6;
 @import 'components/_telephone-button.scss';
 @import 'components/_telephone.scss';
 @import 'components/_user-services.scss';
+@import 'components/_covid-19.scss';
 
 
 // General parameters
@@ -89,4 +90,21 @@ $sky-blue: #0c82c6;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 650px){
+  #back-to-index{
+    font-size: 11px;
+    right: 5px;
+    letter-spacing: 2px;
+  }
+
+  #logo-sections{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+  }
 }

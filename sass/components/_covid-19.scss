@@ -1,0 +1,88 @@
+// Covid-19 Styles Open
+.covid-19{
+  @include flex-column;
+  @include background-sections;
+  padding: 10% 0;
+
+  .covid-19-image{
+    width: 30%;
+    height: auto;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .covid-19-info{
+    width: 60%;
+    margin: 2rem 0;
+    text-align: left;
+
+    h3{
+      color: #fff;
+      font-weight: bold;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+    }
+
+    p{
+      color: #fff;
+      margin: 1rem 0;
+
+      a{
+        color: $sky-blue;
+      }
+    }
+
+    .tags-parragraph{
+      color: $sky-blue;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .covid-19{
+    @include flex-column;
+    @include background-sections;
+    padding: 25% 0;
+
+    .covid-19-image{
+      width: 70%;
+      height: auto;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .covid-19-info{
+      width: 60%;
+      margin: 2rem 0;
+      text-align: left;
+
+      h3{
+        color: #fff;
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        font-size: 18px;
+      }
+
+      p{
+        color: #fff;
+        margin: 1rem 0;
+        font-size: 13px;
+
+        a{
+          color: $sky-blue;
+        }
+      }
+
+      .tags-parragraph{
+        color: $sky-blue;
+      }
+    }
+  }
+}

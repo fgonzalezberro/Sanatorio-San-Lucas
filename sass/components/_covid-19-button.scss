@@ -1,0 +1,18 @@
+// Covid-19-button Styles Open
+.covid-19-button{
+  width: 100%;
+  position: absolute;
+  padding: 20px 0;
+  top: 100px;
+  left: 0;
+  text-align: center;
+  background-color: tomato;
+  color: #fff;
+  cursor: pointer;
+  @include flex-row;
+
+  h3{
+    letter-spacing: 5px;
+    margin: 0 15px;
+  }
+}

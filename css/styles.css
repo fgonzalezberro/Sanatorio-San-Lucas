@@ -658,6 +658,25 @@ footer .copyright-footer {
     font-size: 4rem !important;
   }
 }
+.covid-19-button {
+  width: 100%;
+  position: absolute;
+  padding: 20px 0;
+  top: 100px;
+  left: 0;
+  text-align: center;
+  background-color: tomato;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.covid-19-button h3 {
+  letter-spacing: 5px;
+  margin: 0 15px;
+}
+
 .location {
   display: flex;
   flex-direction: column;

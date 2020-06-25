@@ -32,6 +32,11 @@ $(document).ready(() =>{
     $(".main").load("../components/"+urlToLoad);
   }
 
+  // Load COVID-19 Section
+  $(".covid-19-button").click(function(){
+    loadComponents('_covid-19.html');
+  });
+
   // Load Telephone Section
   $(".telephone-button").click(function(){
     loadComponents('_telephone.html');

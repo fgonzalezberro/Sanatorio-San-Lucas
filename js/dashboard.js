@@ -7,17 +7,6 @@ $(document).ready(() =>{
   // Transform 'News Textarea' in a Editable textarea
   $(".news-content").Editor();
 
-  // Capture Window Width
-  const viewport = window.screen.width;
-
-  if(viewport <= 600){
-    const body = document.getElementsByTagName('body')[0];
-    body.innerHTML = `<div class='no-mobile-v'>
-                        <img src='img/logos/sanatorio-san-lucas-blue.png'></img>
-                       </div>
-                      `;
-  }
-
   // Set Sidebar animation's
   $(".dashboard-btn").click(() =>{
     // Execute this function if btnStatus is true in Desktop Version
@@ -50,6 +39,10 @@ $(document).ready(() =>{
 
     // Evaluate the state of the button
     return btnStatus == true ? openSidebar() : closeSidebar();
+  });
+
+  $('.dashboard-btn-2').click(() =>{
+    $('.mobile-navbar').slideToggle(1000);
   });
 
   // Show and Hide 'Dashboard' sections

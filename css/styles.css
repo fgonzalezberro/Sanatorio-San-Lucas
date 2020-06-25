@@ -163,22 +163,6 @@
     width: 70%;
   }
 }
-.no-mobile-v {
-  width: 100%;
-  height: 100vh;
-  padding: 0 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.no-mobile-v img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 1%;
-}
-
 nav {
   width: 100%;
   height: 100px;
@@ -190,6 +174,12 @@ nav .dashboard-logo {
   right: 50px;
   width: 200px;
   height: auto;
+}
+nav .dashboard-btn-2 {
+  display: none;
+}
+nav .mobile-navbar {
+  display: none;
 }
 
 .dashboard-section {
@@ -417,6 +407,139 @@ nav .dashboard-logo {
   font-size: 60px;
 }
 
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: 100px;
+    background-color: #343a40;
+  }
+  nav .dashboard-logo {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+  }
+  nav .dashboard-btn-2 {
+    color: #fff;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    transition: 1s;
+    display: flex;
+  }
+  nav .mobile-navbar {
+    width: 100%;
+    background-color: #343a40;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: center;
+  }
+  nav .mobile-navbar ul {
+    width: 100%;
+  }
+  nav .mobile-navbar ul li {
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .dashboard-section .side-bar {
+    display: none;
+  }
+  .dashboard-section .dashboard-main h2 {
+    font-size: 20px;
+  }
+  .dashboard-section .dashboard-main .add-news-section {
+    width: 100%;
+    height: 100%;
+    padding: 1% 0;
+    display: none;
+    overflow-y: auto;
+  }
+  .dashboard-section .dashboard-main .add-news-section .Editor-container {
+    margin-top: 10px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100% !important;
+  }
+  .dashboard-section .dashboard-main .add-news-section h3 {
+    font-size: 25px;
+    color: #343a40;
+    font-family: "Rajdhani", sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form input {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    color: #444;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form ::placeholder {
+    color: #DDCDC9;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form textarea {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 3%;
+    color: #444;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form #news-input-file {
+    display: none;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form .charge-image-button {
+    border: 1px dashed #e3e3e3;
+    border-radius: 10px;
+    padding: 1% 10%;
+    width: 100%;
+    margin-bottom: 1%;
+    color: #DDCDC9;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form .charge-image-button i {
+    font-size: 2.5rem;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form .add-new-btn {
+    border: 1px solid #343a40;
+    border-radius: 10px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 1rem;
+    width: 200px;
+    font-family: "Rajdhani", sans-serif;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dashboard-section .dashboard-main .add-news-section .add-news-form .add-new-btn:hover {
+    background-color: #fff;
+    color: #343a40;
+  }
+  .dashboard-section .dashboard-main .add-news-section #progress-bar {
+    margin-top: 1%;
+    width: 80%;
+    display: none;
+  }
+}
 footer {
   width: 100%;
 }

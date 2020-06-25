@@ -621,6 +621,9 @@ footer .copyright-footer {
 .institutional .institutional-content p {
   color: #fff;
 }
+.institutional .institutional-content .ssl-history p {
+  margin: 1rem 0;
+}
 
 @media screen and (max-width: 792px) {
   .institutional h1 {

@@ -80,5 +80,5 @@ $(document).ready(() =>{
 
   $("#hidalgo-btn").click(() => window.location.href = "https://www.laboratoriohidalgo.com/");
 
-  $("#omar-center-btn").click(() => window.location.href = "http://www.centromedicomartinyomar.com/");
+  $("#omar-center-btn").click(() => window.location.href = "https://www.cmmyo.com.ar");
 });
